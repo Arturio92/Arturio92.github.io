@@ -63,7 +63,7 @@
 		.container{	display: flex;
 					justify-content: space-between;
 					align-items: center;
-					margin-top: 100px;
+					padding-top: 50px;
 					}	
 		.promo_text{width: 50%;
 					font-weight:400 ;
@@ -84,9 +84,13 @@
 		text-align: center;
 		font-weight: 600;
 		color: #8A2BE2;
-		font-size: 45px;}		
+		font-size: 45px;}
+	.container{
+	
+		
+	}			
 	.slider{
-		height: 400px;
+		
 			.foto{
 			height: 300px;		
 			width: 100%;
@@ -148,7 +152,14 @@ footer{			height: 60px;
 										.preparation2{	width:250px;
 														height: 250px;}	}	
 														
-														}							
+															
+	.galery{
+		.container{
+			.slider{
+				.foto{height: 250px;}
+			}
+		}
+	}	}																		
 @media screen and (max-width :576px){
 	.promo{
 		h1{padding-top:25px;
