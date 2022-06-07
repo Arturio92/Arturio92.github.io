@@ -28,9 +28,8 @@
 
 
 	// .promo
-.promo{	position: relative;
-	height: 800px;
-	background: url("../images/img_111.jpg") center center/cover;			
+.promo{	position: relative;	
+	background: url("../images/img_111.jpg") center (center/cover) ;			
 		
 		
 	
@@ -69,33 +68,23 @@
 					font-weight:400 ;
 					color: #F4A460;
 					font-size: 25px;}
-					// word-break:break-all;}			
+								
 		}
-// info
-.info{
-	height: 600px;
-	background-color: #8A2BE2;
-	border-top: 2px solid #F4A460;
 
-}
-// galery
-.galery{background-color:#765b7a; 
-	h2{	background-color: #F4A460;
-		text-align: center;
-		font-weight: 600;
-		color: #8A2BE2;
-		font-size: 45px;}
+
+// fotorama
+.fotorama{
+ 	padding: 30px 30px;
 	.container{
-	
-		
-	}			
-	.slider{
-		
-			.foto{
-			height: 300px;		
-			width: 100%;
-			border: 3px solid #F4A460;}}
-				
+		display: flex;
+		justify-content: center;
+		.slider{	
+			width: 80%;
+				.foto{	height: 500px;		
+						width: 100%;					
+						border: 3px solid #F4A460;}
+		}			
+	 }			
 }
 // footer
 footer{			height: 60px;
@@ -137,33 +126,104 @@ footer{			height: 60px;
 							height: 300px;
 							.preparation2{	width:300px;
 											height: 300px;}	}	
-							}							
+							}
+.fotorama{
+		padding: 30px 30px;
+		 .container{
+		   display: flex;
+		   justify-content: center;
+		   .slider{	
+			   width: 80%;
+				   .foto{	height: 450px;		
+						   width: 100%;					
+						   border: 3px solid #F4A460;}
+								   }			
+								}												
+							}												
 @media screen and (max-width :768px){
 	
 		.promo .container{
 			flex-direction: column;
 			margin-top: 15px;
 			.promo_text{width: 100%;
-				margin-top: 10px;
-				font-size: 20px;}	
+				margin-top: 40px;
+				font-size: 20px;
+				text-align: center;}	
 	}
-			.promo .preparation {	width:250px;
-									height: 250px;
-										.preparation2{	width:250px;
-														height: 250px;}	}	
-														
-															
-	.galery{
-		.container{
-			.slider{
-				.foto{height: 250px;}
-			}
-		}
-	}	}																		
+			.promo .preparation {	width:300px;
+									height: 300px;
+										.preparation2{	width:300px;
+														height: 300px;}	}	
+.fotorama{
+	padding: 0;
+	 .container{
+		 margin-top: 0;
+		 padding: 40px 20px;
+	   display: flex;
+	   justify-content: center;
+	   .slider{	
+		   width: 80%;
+			   .foto{	height: 325px;		
+					   width: 100%;					
+					   border: 3px solid #F4A460;}
+																					   }			
+																					}												
+																				}
+																			}																														
 @media screen and (max-width :576px){
 	.promo{
 		h1{padding-top:25px;
 			font-size: 30px;}	
+	}
+	
+	.promo .preparation {	width:230px;
+							height: 230px;
+							.preparation2{	width:230px;
+											height: 230px;}	}	
+	.promo .container{
+	flex-direction: column;
+	margin-top: 15px;
+				.promo_text{width: 100%;
+							margin-top: 30px;
+							font-size: 20px;}							
+	}	
+	.fotorama{
+		padding: 0;
+		 .container{
+			 margin-top: 0;
+			 padding: 40px 20px;
+		   display: flex;
+		   justify-content: center;
+		   .slider{	
+			   width: 80%;
+				   .foto{	height: 220px;		
+						   width: 100%;					
+						   border: 3px solid #F4A460;}
+																						   }			
+																						}												
+																					}
+																			
+
+	footer{
+			.container .icon_vk{
+				
+							width: 35px;
+							height: 35px;
+				}
+				.container .btn_top{
+					height: 35px;
+				}
+						}
+}						
+				
+	
+@media screen and (max-width :320px){
+	.nav .container .menu li{
+		font-size: 15px;
+	}
+	.promo{
+		h1{padding-top:25px;
+			font-size: 25px;}	
 	}
 	
 	.promo .preparation {	width:180px;
@@ -172,31 +232,27 @@ footer{			height: 60px;
 								height: 180px;}	}	
 	.promo .container{
 	flex-direction: column;
-	margin-top: 15px;
+	padding-top:0;
+	margin-top: 30px;
 				.promo_text{width: 100%;
 							margin-top: 30px;
-							font-size: 20px;}							
-	}	
-
-}
-@media screen and (max-width :320px){
-	.promo{
-		h1{padding-top:25px;
-			font-size: 25px;}	
-	}
-	
-	.promo .preparation {	width:120px;
-							height: 120px;
-							.preparation2{	width:120px;
-								height: 120px;}	}	
-	.promo .container{
-	flex-direction: column;
-	margin-top: 15px;
-				.promo_text{width: 100%;
-							margin-top: 10px;
 							font-size: 20px;
 							word-break: break-all;	}							
 	}	
-
+	.fotorama{
+		padding: 0;
+		 .container{
+			 margin-top: 0;
+			 padding: 40px 20px;
+		   display: flex;
+		   justify-content: center;
+		   .slider{	
+			   width: 80%;
+				   .foto{	height: 180px;		
+						   width: 100%;					
+						   border: 3px solid #F4A460;}
+																						   }			
+																						}												
+																					}
 
 }
